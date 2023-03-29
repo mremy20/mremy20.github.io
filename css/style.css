@@ -53,7 +53,7 @@ div nav {
 .navitem {
     
     color:aliceblue;
-    font-size: 25px;
+    font-size: 1.8em;
     text-decoration:none;
     margin-right:15px;
     transition: color 0.35s ease-in-out;
@@ -611,6 +611,16 @@ div nav {
         border-radius: 10px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    
+    }
+    
+    .navitem {
+    
+        color:aliceblue;
+        font-size: 1.4em;
+        text-decoration:none;
+        margin-right:15px;
+        transition: color 0.35s ease-in-out;
     
     }
 
