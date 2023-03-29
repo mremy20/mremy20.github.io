@@ -746,7 +746,7 @@ div nav {
     #form-top {
 
         height:0.5em;
-        width: 24.5em;
+        width: 25em;
     
     }
 
@@ -776,7 +776,7 @@ div nav {
     .navitem {
     
         color:aliceblue;
-        font-size: 1.1em;
+        font-size: 1.2em;
         text-decoration:none;
         margin-right:16px;
         transition: color 0.35s ease-in-out;
