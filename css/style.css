@@ -339,6 +339,7 @@ div nav {
     
     margin-top: 20px;
     height: 100px;
+    width:100%;
     background-color:grey;
 
 }
@@ -764,7 +765,7 @@ div nav {
     #submit-button {
 
         color:aliceblue;
-        margin-left:143px;
+        margin-left:135px;
         background-color: grey;
         border: 5px solid grey;
         border-radius: 10px;
