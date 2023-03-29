@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset = "UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> REMYTECH </title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="jquery/jquery-ui.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3bdb479e1a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="navheader"> 
+
+        <nav>
+
+            <a class="navitem" href="#about">About</a>
+            <a class="navitem" href="#experience">Experience</a>
+            <a class="navitem" href="#projects">Projects</a>
+            <a id = "contactnavitem" class="navitem" href="#contact">Contact</a>
+
+            
+            
+        </nav>
+        
+        <p id="navdecoration">REMYTECH</p>
+
+    </div>
+
+    <div id="about">
+    
+        <h1>Marcos Remy</h1>
+        <h2>Software Developer</h2>
+        <img src="/images/cos.png">
+
+        <p>As a student currently studying Computer Science at the University of Rhode Island with a strong passion for programming. Let us work together to further develop and advance technology!</p>
+    
+    </div>
+    
+    <div id="experience">
+
+        <h1>EXPERIENCE</h1>
+        
+        <div id="card_container"> 
+
+            <div class="exp_card" id="education">
+                
+                <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                <h2>UNIVERSITY OF RHODE ISLAND</h2>
+                <hr>
+                <p>As a current Junior pursuing a Bacherlors of Science degree in Computer Science i've learned and gotten to work with many coding languages. My classes went over many important topics in Computer Science such as Data Structures & Abstractions, Operating Systems and Networks, Computer Graphics, Software Engineering, and Information & Network Security. With these skills and my dedication for programming i'm a skillful asset to add to any team.</p>
+
+            </div>
+
+            <div class="exp_card" id="software_development">
+
+                <i class="fa-sharp fa-solid fa-computer fa-2xl"></i>
+                <h2><span>Software </span> DEVELOPMENT</h2>
+                <hr>
+                <p>With my proficiency in HTML, CSS, and JavaScript. I am capable of crafting dynamic and interactive front-end designs. In addition, I have experience in programming languages such as C++, C, and Python, which has enabled me to create reliable and efficient software solutions for various applications. My programming knowledge and skills have allowed me to work on a range of different projects, from building desktop applications to developing algorithms and data structures.</p>
+
+            </div>
+
+            <div class="exp_card" id="leadership">
+
+                <i class="fa-sharp fa-solid fa-star fa-2xl"></i>
+                <h2>LEADERSHIP</h2>
+                <hr>
+                <p>In my Business Fraternity I further involved myself as an Assistant Treasurer, Brotherhood Chair, and Judicial Board member. This has provided me with valuable experiences in leadership, teamwork, and accountability. As the Assistant Treasurer, I developed financial management skills and learned how to budget and allocate the fraternities resources effectively. In my role as Brotherhood Chair, I facilitated team-building activities to promote a strong sense of community. As a member of the Judicial Board, I learned how to handle conflicts and make fair decisions. I have also tutored younger students in Python and C++. This helped me develop my teaching and communication skills while furthering my understanding on the topics. Through these experiences, I have gained a well-rounded skill set that will serve me well in any future endeavors.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div id="skills">
+
+        <h1>SKILLS</h1>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JAVASCRIPT</p>
+        <p>C/C++</p>
+        <P>C#</P>
+        <p>PYTHON</p>
+        <p>LUA</p>
+
+    </div>
+
+    <div id="projects">
+
+        <h1>PROJECTS</h1>
+
+        <div id="tabs">
+
+            <ul>
+                <li><a href="#tabs-1">C/C++</a></li>
+                <li><a href="#tabs-2">Python</a></li>
+                <li><a href="#tabs-3">Other</a></li>
+            </ul>
+
+            <div id="tabs-1">
+                
+                <a href = "files/PacManReport.pdf"> 
+
+                <div class = "img-card">
+
+                    <img src = "images/pacman.png"> 
+                    
+                    <div class = "img-overlay">
+
+                        <p>Pacman along with each ghost run independently on their own threads</p>
+
+                    </div>
+
+                </div>
+
+                </a>
+
+                <a href = "files/SnakeReport.pdf"> 
+
+                    <div class = "img-card">
+    
+                        <img src = "images/snake.png"> 
+    
+                        <div class = "img-overlay">
+    
+                            <p>Snakes run independently on their own threads and find best path using the A* algorithm</p>
+    
+                        </div>
+    
+                    </div>
+    
+                    </a>
+
+
+            
+            
+            </div>
+
+            <div id="tabs-2">WIP</div>
+            <div id="tabs-3">WIP</div>
+
+        </div>
+
+    </div>
+
+    <div id="profile">
+
+        <h1>PROFILE</h1>
+
+        <table>
+            <tr>
+                <td><b>Name:</b></td>
+                <td>Marcos Remy</td>
+            </tr>
+
+            <tr>
+                <td><b>Birthday:</b></td>
+                <td>April 16, 2002</td>
+            </tr>
+
+            <tr>
+                <td><b>Resume:</b></td>
+                <td>Click <a id = "resume-link" href="files/Resume.pdf" download> Here </a> </td>
+            </tr>
+
+            <tr>
+                <td><b>Phone:</b></td>
+                <td> 401-835-8072 </td>
+            </tr>
+
+            <tr>
+                <td><b>Email:</b></td>
+                <td>marcosremy2002@gmail.com</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="connect">
+        
+        <h1>CONNECT</h1>
+        
+        <form action="send_email.php" method="post">
+            
+            <div id = "form-top">
+
+                <input type="text" id="name" name="Your Name" placeholder="Your Name">
+                <input type="email" id="email" name="email" placeholder="Email">
+
+            </div>
+
+            <br>
+
+            <textarea id="message" name="message" rows="4" cols="70" placeholder = "Your Message"></textarea>
+            
+            <br>
+          
+            <input id = "submit-button" type="submit" value="Send Message">
+
+          </form>
+
+    </div>
+
+
+    <footer id="footer">
+        
+        <p>Copyright © 2023 Marcos Remy.</p>
+
+    </footer>
+
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+
+    <script>
+
+        $( "#tabs" ).tabs();
+        
+    </script>
+
+</body>
+
+
+</html>
