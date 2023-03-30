@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> REMYTECH </title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
-    <link href="jquery/jquery-ui.css" rel="stylesheet">
+    <link href="../jquery/jquery-ui.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/3bdb479e1a.js" crossorigin="anonymous"></script>
 
@@ -39,7 +39,8 @@
     
         <h1>Marcos Remy</h1>
         <h2>Software Developer</h2>
-        <img width="40%" height="40%" src="/images/cos.png">
+
+        <img width="40%" height="40%" id="about-picture" src="..//images/cos.png">
 
         <p>As a student currently studying Computer Science at the University of Rhode Island with a strong passion for programming. Let us work together to further develop and advance technology!</p>
     
@@ -111,11 +112,11 @@
 
             <div id="tabs-1">
                 
-                <a href = "files/PacManReport.pdf"> 
+                <a href = "../files/PacManReport.pdf"> 
 
                 <div class = "img-card">
 
-                    <img src = "images/pacman.png"> 
+                    <img src = "../images/pacman.png"> 
                     
                     <div class = "img-overlay">
 
@@ -127,11 +128,11 @@
 
                 </a>
 
-                <a href = "files/SnakeReport.pdf"> 
+                <a href = "../files/SnakeReport.pdf"> 
 
                     <div class = "img-card">
     
-                        <img src = "images/snake.png"> 
+                        <img src = "../images/snake.png"> 
     
                         <div class = "img-overlay">
     
@@ -172,7 +173,7 @@
 
             <tr>
                 <td><b>Resume:</b></td>
-                <td>Click <a id = "resume-link" href="files/Resume.pdf" download> Here </a> </td>
+                <td>Click <a id = "resume-link" href="../files/Resume.pdf" download> Here </a> </td>
             </tr>
 
             <tr>
@@ -193,8 +194,8 @@
         
         <h1>CONNECT</h1>
         
-        <form action="https://formspree.io/f/mwkjrvvd" method="POST">
-            
+        <form action="send_email.php" method="post">
+
             <div id = "form-top">
 
                 <input type="text" id="name" name="Your Name" placeholder="Your Name">
@@ -204,16 +205,15 @@
 
             <br>
 
-            <textarea id="message" name="message" rows="4" cols="70" placeholder = "Your Message"></textarea>
+            <textarea id="message" name="message" placeholder = "Your Message"></textarea>
             
             <br>
           
             <input id = "submit-button" type="submit" value="Send Message">
-
+            
           </form>
 
-    </div>
-
+    </div> 
 
     <footer id="footer">
         
@@ -221,8 +221,8 @@
 
     </footer>
 
-    <script src="jquery/external/jquery/jquery.js"></script>
-    <script src="jquery/jquery-ui.js"></script>
+    <script src="../jquery/external/jquery/jquery.js"></script>
+    <script src="../jquery/jquery-ui.js"></script>
 
     <script>
 
@@ -231,6 +231,5 @@
     </script>
 
 </body>
-
 
 </html>
