@@ -543,7 +543,7 @@ body {
 
         #message {
 
-            width: 36.5em;
+            width: 36.4em;
             margin-right:0px;
             
         }
@@ -559,7 +559,7 @@ body {
         
             transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
             
-            margin-left: 200px;
+            margin-left: 190px;
 
         }
     
