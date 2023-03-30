@@ -1,9 +1,13 @@
 body {
 
+    width: 100%;
+    height: 100%;
     margin:0px;
     padding:0px;
     background-color:white;
     font-family:sans-serif;
+
+    overflow-x: hidden; 
     
     }
     
@@ -290,12 +294,34 @@ body {
         opacity: 1;
       }
     
+    
     #connect form {
     
         margin-left:20%;
     
     }
+
+    #form-top {
     
+        height:0.5em;
+        width: 36.5em;
+    
+    }
+    
+    #form-top input{
+    
+        width: 48%;
+    
+    }
+    
+    #message {
+    
+        margin-bottom: 5px;
+        height: 5em;
+        width: 43.2em;
+    
+    }
+
     #submit-button {
     
         color:aliceblue;
@@ -313,25 +339,6 @@ body {
     
         background-color: #969696;
         border-color:#969696;
-    
-    }
-    
-    #form-top {
-    
-        height:0.5em;
-        width: 36.5em;
-    
-    }
-    
-    #form-top input{
-    
-        width: 48%;
-    
-    }
-    
-    #connect form textarea {
-    
-        margin-bottom: 5px;
     
     }
     
@@ -361,7 +368,6 @@ body {
     }
     
     /* Media queries for different screen sizes */
-    
     @media only screen and (max-width: 1200px) {
     
         #navheader {
@@ -387,7 +393,14 @@ body {
     
     }
     
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 960px) {
+
+        #about-picture {
+
+            width:70%;
+            height:70%;
+
+        }
     
         #navheader {
     
@@ -409,43 +422,6 @@ body {
             z-index:1;
             
             }
-        
-        #connect form {
-    
-            margin-left:0;  
-            
-        }
-    
-    }
-    
-    @media only screen and (max-width: 830px) {
-    
-        #navheader {
-    
-            background-image: linear-gradient(45deg, transparent 50%, white 50%, white 51%, transparent 51%), linear-gradient(45deg, transparent 50%, white 50%, white calc(50% + 8px), transparent calc(50% + 8px));
-            background-color: #33ccff;
-            background-position: left 20em top 0px, left 22em top 0px;
-            background-repeat: no-repeat;
-            
-            
-            margin:0px;
-            padding:0px;
-            position:fixed;
-            
-            width:100%;
-            height:80px;
-            
-            box-shadow: 0px 0px 15px 0px grey;
-            
-            z-index:1;
-            
-            }
-        
-        #connect form {
-    
-            margin-left:0;  
-            
-        }
     
         #navdecoration {
     
@@ -453,42 +429,57 @@ body {
     
         }
     
+    }
+
+    @media only screen and (max-width: 865px) {
+
+        #connect form {
+            
+            margin-left: 5%;
+        
+        }
+
+        #form-top {
+
+            height:0.5em;
+            width: 38.5em;
+            margin-right:0px;
+            padding-right:0px;
+        
+        }
+
+        #form-top input {
+
+            width:40%;
+
+        }
+
+        #message {
+
+            width: 38em;
+            margin-right:0px;
+            
+        }
+
+        #submit-button {
+    
+            color:aliceblue;
+            margin-left: 0px;
+            background-color: grey;
+            border: 5px solid grey;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        
+            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+            
+            margin-left: 200px;
+
+        }
+
+
     }
     
     @media only screen and (max-width: 747px) {
-    
-        #navheader {
-    
-            background-image: linear-gradient(45deg, transparent 50%, white 50%, white 51%, transparent 51%), linear-gradient(45deg, transparent 50%, white 50%, white calc(50% + 8px), transparent calc(50% + 8px));
-            background-color: #33ccff;
-            background-position: left 20em top 0px, left 22em top 0px;
-            background-repeat: no-repeat;
-            
-            
-            margin:0px;
-            padding:0px;
-            position:fixed;
-            
-            width:100%;
-            height:80px;
-            
-            box-shadow: 0px 0px 15px 0px grey;
-            
-            z-index:1;
-            
-            }
-        
-        #connect form {
-    
-            margin-left:0;  
-            
-        }
-    
-        #navdecoration {
-    
-            opacity:0;
-    
-        }
     
         .exp_card {
     
@@ -499,60 +490,187 @@ body {
             float:none;
             transition: border-color 0.35s ease-in-out;
             
+            margin-right:0px;
         }
     
+    }
+
+    @media only screen and (max-width: 710px) {
+
+        #about p {
+    
+            width:35em;
+            font-size: 1.1em;
+
+        }
+
     }
     
     @media only screen and (max-width: 643px) {
     
-        #navheader {
+        #about p {
     
-            background-image: linear-gradient(45deg, transparent 50%, white 50%, white 51%, transparent 51%), linear-gradient(45deg, transparent 50%, white 50%, white calc(50% + 8px), transparent calc(50% + 8px));
-            background-color: #33ccff;
-            background-position: left 20em top 0px, left 22em top 0px;
-            background-repeat: no-repeat;
-            
-            
-            margin:0px;
-            padding:0px;
-            position:fixed;
-            
-            width:100%;
-            height:80px;
-            
-            box-shadow: 0px 0px 15px 0px grey;
-            
-            z-index:1;
-            
-            }
-        
-        #connect form {
-    
-            margin-left:0;  
-            
+            width:28em;
+            font-size: 1.1em;
         }
-    
+
         #navdecoration {
     
             opacity:0;
     
+            }
+
+        #connect form {
+        
+            margin-left: 0;
+        
+        }
+
+        #form-top {
+
+            height:0.5em;
+            width: 37em;
+            margin-right:0px;
+            padding-right:0px;
+        
+        }
+
+        #form-top input {
+
+            width:40%;
+
+        }
+
+        #message {
+
+            width: 36.5em;
+            margin-right:0px;
+            
+        }
+
+        #submit-button {
+    
+            color:aliceblue;
+            margin-left: 0px;
+            background-color: grey;
+            border: 5px solid grey;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        
+            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+            
+            margin-left: 200px;
+
         }
     
+    }
+
+    @media only screen and (max-width: 555px) {
+
+        .navitem {
+    
+            color:aliceblue;
+            font-size: 1.6em;
+            text-decoration:none;
+            margin-right:15px;
+            transition: color 0.35s ease-in-out;
+        
+        }
+
         #form-top {
     
             height:0.5em;
-            width: 33.8em;
+            width: 30.8em;
+            margin-right:0px;
         
         }
     
+        #form-top input{
+    
+            width: 40%;
+        
+        }
+
         #message {
     
-            width:40em;
+            width:30.7em;
         }
     
+        #submit-button {
+    
+            color:aliceblue;
+            margin-left:150px;
+            background-color: grey;
+            border: 5px solid grey;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+        
+        }
+
     }
     
     @media only screen and (max-width: 504px) {
+
+        .navitem {
+    
+            color:aliceblue;
+            font-size: 1.4em;
+            text-decoration:none;
+            margin-right:15px;
+            transition: color 0.35s ease-in-out;
+        
+        }
+
+        #about p {
+    
+            width:30em;
+            font-size: 0.9em;
+        
+        }
+        
+    
+        #navdecoration {
+    
+            opacity:0;
+    
+        }
+    
+        #form-top {
+    
+            height:0.5em;
+            width: 30.8em;
+            margin-right:0px;
+        
+        }
+    
+        #form-top input{
+    
+            width: 40%;
+            margin-right: 0px;
+        
+        }
+
+        #message {
+    
+            width:30.7em;
+        }
+    
+        #submit-button {
+    
+            color:aliceblue;
+            margin-left:150px;
+            background-color: grey;
+            border: 5px solid grey;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+        
+        }
+        
+    }
+    
+    @media only screen and (max-width: 470px) {
     
         #navheader {
     
@@ -574,171 +692,13 @@ body {
             z-index:1;
             
             }
-        
-        #connect form {
-    
-            margin-left:0;
-            
-        }
-    
-        #navdecoration {
-    
-            opacity:0;
-    
-        }
-    
-        #form-top {
-    
-            height:0.5em;
-            width: 30.8em;
-        
-        }
-    
-        #form-top input{
-    
-            width: 40%;
-        
-        }
-    
-        #message {
-    
-            width:30.7em;
-        }
-    
-        #submit-button {
-    
-            color:aliceblue;
-            margin-left:150px;
-            background-color: grey;
-            border: 5px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-        
-        }
-        
-        .navitem {
-        
-            color:aliceblue;
-            font-size: 1.4em;
-            text-decoration:none;
-            margin-right:15px;
-            transition: color 0.35s ease-in-out;
-        
-        }
         
         #about p {
     
-        width: 20em;
-        margin: 0 auto;
-    
-        }  
-    
-    }
-    
-    
-    @media only screen and (max-width: 470px) {
-    
-        #navheader {
-    
-            background-image: linear-gradient(45deg, transparent 50%, white 50%, white 51%, transparent 51%), linear-gradient(45deg, transparent 50%, white 50%, white calc(50% + 8px), transparent calc(50% + 8px));
-            background-color: #33ccff;
-            background-position: left 20em top 0px, left 22em top 0px;
-            background-repeat: no-repeat;
-            
-            
-            margin:0px;
-            padding:0px;
-            position:fixed;
-            
-            width:100%;
-            height:80px;
-            
-            box-shadow: 0px 0px 15px 0px grey;
-            
-            z-index:1;
-            
-            }
-        
-        #connect form {
-    
-            margin-left:0;  
-            height:50px;
-            margin-bottom:100px;
-    
+            width:28em;
+            font-size: 1.1em;
         }
-    
-        #navdecoration {
-    
-            opacity:0;
-    
-        }
-    
-        #form-top {
-    
-            height:0.5em;
-            width: 30.8em;
-        
-        }
-    
-        #form-top input{
-    
-            width: 40%;
-        
-        }
-    
-        #message {
-    
-            width:30.7em;
-        }
-    
-        #submit-button {
-    
-            color:aliceblue;
-            margin-left:150px;
-            background-color: grey;
-            border: 5px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-        
-        }
-    
-        .navitem {
-        
-            color:aliceblue;
-            font-size: 1.4em;
-            text-decoration:none;
-            margin-right:15px;
-            transition: color 0.35s ease-in-out;
-        
-        }
-    
-    }
-    
-    @media only screen and (max-width: 470px) {
-    
-        #navheader {
-    
-            background-image: linear-gradient(45deg, transparent 50%, white 50%, white 51%, transparent 51%), linear-gradient(45deg, transparent 50%, white 50%, white calc(50% + 8px), transparent calc(50% + 8px));
-            background-color: #33ccff;
-            background-position: left 20em top 0px, left 22em top 0px;
-            background-repeat: no-repeat;
-            
-            
-            margin:0px;
-            padding:0px;
-            position:fixed;
-            
-            width:100%;
-            height:80px;
-            
-            box-shadow: 0px 0px 15px 0px grey;
-            
-            z-index:1;
-            
-            }
-        
+
         #connect form {
     
             margin-left:0;  
