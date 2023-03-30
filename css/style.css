@@ -626,6 +626,13 @@ body {
             transition: color 0.35s ease-in-out;
         
         }
+        
+        #about p {
+    
+        width: 20em;
+        margin: 0 auto;
+    
+        }  
     
     }
     
