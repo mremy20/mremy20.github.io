@@ -711,3 +711,12 @@ body {
         }
 
     }
+
+    @media (orientation: landscape) {
+  
+        #message {
+    
+            width:30.7em;
+        }
+
+    }
