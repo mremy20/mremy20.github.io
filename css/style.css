@@ -712,7 +712,7 @@ body {
 
     }
 
-    @media (orientation: landscape) {
+    @media screen and (orientation: landscape) {
   
         #message {
     
