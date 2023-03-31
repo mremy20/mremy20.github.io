@@ -713,4 +713,11 @@ body {
         }
 
     }
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation:landscape) {
+    
+    width:32.4em;
+    
+}
  
