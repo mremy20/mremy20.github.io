@@ -712,11 +712,14 @@ body {
 
     }
 
-    @media screen and (orientation: landscape) {
-  
+    /* iPhone Landscape */
+    @media screen and (max-device-width: 480px) and (orientation:landscape) {
+        
         #message {
     
-            width:35.7em;
+            width:40.7em;
+            
         }
-
+        
     }
+
