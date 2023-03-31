@@ -38,7 +38,7 @@ body {
         margin-left: 10%;
     
     }
-    
+
     #navheader p{
     
         float:right;
@@ -49,8 +49,6 @@ body {
         margin-right:18%;
         position:relative;
         top:-55px;
-    
-        
     
     }
     
@@ -89,7 +87,6 @@ body {
         margin-left:10%;
         width:80%;
     
-    
     }
     
     #experience h1 {
@@ -97,7 +94,6 @@ body {
         margin-top: 40px;
      
     }
-    
     
     #card_container {
 
@@ -108,18 +104,15 @@ body {
       }
 
     .exp_card {
-    
+
+        display:flex;
+        flex-direction:column;
         margin-top: 15px;
         margin-right: 2%;
-        /* height: 520px; */
         width: 30%;
         border: 4px solid black;
         float:left;
         transition: border-color 0.35s ease-in-out;
-
-        display:flex;
-        flex-direction:column;
-
 
     }
     
@@ -133,12 +126,14 @@ body {
     
         text-align:center;
         font-size:1.5em;
+        margin: 40px 0 20px 0;
     
     }
     
     .exp_card hr {
     
         width: 45%;
+        margin: 0 auto;
     
     }
     
@@ -146,8 +141,8 @@ body {
     
         text-align:center;
         line-height: 1.5em;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 0 5% 0 5%;
+        margin-top: 20px;
 
     }
     
@@ -182,7 +177,7 @@ body {
     
     #profile {
         
-        margin-left:10%;
+        margin: 20px 0 20px 10%;
     
     }
     
@@ -205,7 +200,7 @@ body {
     
     }
     
-    #connect {
+    #connect h1{
     
         margin-left:10%;
     
@@ -224,7 +219,7 @@ body {
         position: relative;
         display: inline-block;
     
-      }
+    }
       
     .img-card img {
 
@@ -233,7 +228,8 @@ body {
     
     }
       
-      .img-overlay {
+    .img-overlay {
+
         position: absolute;
         top: 0;
         left: 0;
@@ -243,58 +239,42 @@ body {
         opacity: 0;
         transition: opacity 0.5s;
         display: flex;
-    
-      }
+
+    }
       
-      .img-overlay p {
+    .img-overlay p {
+
         color: white;
         font-size: 0.9rem;
         margin-top: 100px;
         text-align:center;
-      }
+    
+    }
       
-      .img-card:hover .img-overlay {
+    .img-card:hover .img-overlay {
+
         opacity: 1;
-      }
-    
-    
-    #connect form {
-    
-        margin-left:20%;
-    
+
     }
 
-    #form-top {
-    
-        height:0.5em;
-        width: 36.5em;
-    
-    }
-    
-    #form-top input{
-    
-        width: 48%;
-    
-    }
-    
-    #message {
-    
-        margin-bottom: 5px;
-        height: 5em;
-        width: 43.2em;
-    
+    #connect form div{
+
+        margin-left: 10%; 
+        width: 80%;
+
     }
 
     #submit-button {
     
         color:aliceblue;
-        margin-left: 225px;
         background-color: grey;
         border: 5px solid grey;
         border-radius: 10px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    
         transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+
+        display:block;
+        margin: 0 auto;
     
     }
     
@@ -322,7 +302,6 @@ body {
         padding-top:70px;
         
     }
-    
     
     /* Media queries for different screen sizes */
     @media only screen and (max-width: 1200px) {
@@ -387,54 +366,6 @@ body {
         }
     
     }
-
-    @media only screen and (max-width: 865px) {
-
-        #connect form {
-            
-            margin-left: 5%;
-        
-        }
-
-        #form-top {
-
-            height:0.5em;
-            width: 38.5em;
-            margin-right:0px;
-            padding-right:0px;
-        
-        }
-
-        #form-top input {
-
-            width:40%;
-
-        }
-
-        #message {
-
-            width: 38em;
-            margin-right:0px;
-            
-        }
-
-        #submit-button {
-    
-            color:aliceblue;
-            margin-left: 0px;
-            background-color: grey;
-            border: 5px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        
-            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-            
-            margin-left: 200px;
-
-        }
-
-
-    }
     
     @media only screen and (max-width: 747px) {
     
@@ -470,55 +401,6 @@ body {
             width:28em;
             font-size: 1.1em;
         }
-
-        #navdecoration {
-    
-            opacity:0;
-    
-            }
-
-        #connect form {
-        
-            margin-left: 0;
-        
-        }
-
-        #form-top {
-
-            height:0.5em;
-            width: 37em;
-            margin-right:0px;
-            padding-right:0px;
-        
-        }
-
-        #form-top input {
-
-            width:40%;
-
-        }
-
-        #message {
-
-            width: 36.5em;
-            margin-right:0px;
-            
-        }
-
-        #submit-button {
-    
-            color:aliceblue;
-            margin-left: 0px;
-            background-color: grey;
-            border: 5px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        
-            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-            
-            margin-left: 200px;
-
-        }
     
     }
 
@@ -531,37 +413,6 @@ body {
             text-decoration:none;
             margin-right:15px;
             transition: color 0.35s ease-in-out;
-        
-        }
-
-        #form-top {
-    
-            height:0.5em;
-            width: 30.8em;
-            margin-right:0px;
-        
-        }
-    
-        #form-top input{
-    
-            width: 40%;
-        
-        }
-
-        #message {
-    
-            width:30.7em;
-        }
-    
-        #submit-button {
-    
-            color:aliceblue;
-            margin-left:150px;
-            background-color: grey;
-            border: 5px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
         
         }
 
@@ -585,47 +436,7 @@ body {
             font-size: 0.9em;
         
         }
-        
-    
-        #navdecoration {
-    
-            opacity:0;
-    
-        }
-    
-        #form-top {
-    
-            height:0.5em;
-            width: 30.8em;
-            margin-right:0px;
-        
-        }
-    
-        #form-top input{
-    
-            width: 40%;
-            margin-right: 0px;
-        
-        }
-
-        #message {
-    
-            width:30.7em;
-            
-        }
-    
-        #submit-button {
-    
-            color:aliceblue;
-            margin-left:150px;
-            background-color: grey;
-            border: 5px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-        
-        }
-        
+ 
     }
     
     @media only screen and (max-width: 470px) {
@@ -656,51 +467,6 @@ body {
             width:25em;
             font-size: 0.8em;
         }
-
-        #connect form {
-    
-            margin-left:0;  
-            height:50px;
-            margin-bottom:100px;
-    
-        }
-    
-        #navdecoration {
-    
-            opacity:0;
-    
-        }
-    
-        #form-top {
-    
-            height:0.5em;
-            width: 24em;
-        
-        }
-    
-        #form-top input{
-    
-            width: 40%;
-        
-        }
-    
-        #message {
-    
-            width:29.4em;
-                
-        }
-    
-        #submit-button {
-    
-            color:aliceblue;
-            margin-left:115px;
-            background-color: grey;
-            border: 5px solid grey;
-            border-radius: 10px;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
-        
-        }
     
         .navitem {
         
@@ -713,11 +479,3 @@ body {
         }
 
     }
-
-/* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation:landscape) {
-    
-    width:38em;
-    
-}
- 
