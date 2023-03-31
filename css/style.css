@@ -610,7 +610,7 @@ body {
 
         #message {
     
-            width:30.7em;
+            width:90.5%
         }
     
         #submit-button {
@@ -685,7 +685,8 @@ body {
     
         #message {
     
-            width:29.4em;
+            width:90.5%
+                
         }
     
         #submit-button {
@@ -711,15 +712,4 @@ body {
         }
 
     }
-
-    /* iPhone Landscape */
-    @media screen and (max-device-width: 480px) and (orientation:landscape) {
-        
-        #message {
-    
-            width:40.7em;
-            
-        }
-        
-    }
-
+ 
