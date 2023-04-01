@@ -33,23 +33,30 @@ body {
     }
     
     div nav {
-    
-        margin-top: 38px;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         margin-left: 10%;
-    
+
+        display: flex;
+        justify-content: center;
+
     }
 
     #navheader p{
     
-        float:right;
-    
         color:aliceblue;
         font-size:1.5em;
-    
-        margin-right:18%;
-        position:relative;
-        top:-55px;
-    
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 75%;
+
+        display: flex;
+        justify-content: center;
+      
     }
     
     .navitem {
